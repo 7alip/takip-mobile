@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import {
   Icon,
   Layout,
@@ -6,26 +6,26 @@ import {
   OverflowMenu,
   TopNavigation,
   TopNavigationAction,
-} from '@ui-kitten/components';
+} from '@ui-kitten/components'
 
-const BackIcon = (props) => <Icon {...props} name="arrow-back" />;
+const BackIcon = props => <Icon {...props} name="arrow-back" />
 
-const EditIcon = (props) => <Icon {...props} name="edit" />;
+const EditIcon = props => <Icon {...props} name="edit" />
 
-const MenuIcon = (props) => <Icon {...props} name="more-vertical" />;
+const MenuIcon = props => <Icon {...props} name="more-vertical" />
 
-const InfoIcon = (props) => <Icon {...props} name="info" />;
+const InfoIcon = props => <Icon {...props} name="info" />
 
-const LogoutIcon = (props) => <Icon {...props} name="log-out" />;
+const LogoutIcon = props => <Icon {...props} name="log-out" />
 
 const Top = () => {
-  const [menuVisible, setMenuVisible] = React.useState(false);
+  const [menuVisible, setMenuVisible] = React.useState(false)
 
   const toggleMenu = () => {
-    setMenuVisible(!menuVisible);
-  };
+    setMenuVisible(!menuVisible)
+  }
 
-  const renderMenuAction = () => <TopNavigationAction icon={MenuIcon} onPress={toggleMenu} />;
+  const renderMenuAction = () => <TopNavigationAction icon={MenuIcon} onPress={toggleMenu} />
 
   const renderRightActions = () => (
     <React.Fragment>
@@ -35,9 +35,9 @@ const Top = () => {
         <MenuItem accessoryLeft={LogoutIcon} title="Logout" />
       </OverflowMenu>
     </React.Fragment>
-  );
+  )
 
-  const renderBackAction = () => <TopNavigationAction icon={BackIcon} />;
+  const renderBackAction = () => <TopNavigationAction icon={BackIcon} />
 
   return (
     <Layout level="1">
@@ -49,7 +49,7 @@ const Top = () => {
         accessoryRight={renderRightActions}
       />
     </Layout>
-  );
-};
+  )
+}
 
-export default Top;
+export default Top
