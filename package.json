@@ -6,6 +6,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
+    "web-build": "expo build:web",
     "lint": "eslint .",
     "format": "prettier --write ."
   },
