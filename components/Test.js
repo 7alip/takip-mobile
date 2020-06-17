@@ -1,6 +1,6 @@
 import React from 'react';
-import { useQuery, gql } from '@apollo/client';
-import { Text, Card } from '@ui-kitten/components';
+import {useQuery, gql} from '@apollo/client';
+import {Text, Card} from '@ui-kitten/components';
 
 const GET_BANKS = gql`
   query GetBooks {
@@ -11,12 +11,12 @@ const GET_BANKS = gql`
 `;
 
 const Test = () => {
-  const { loading, error, data } = useQuery(GET_BANKS);
+  const {loading, error, data} = useQuery(GET_BANKS);
 
   if (loading) return <Text>Loading</Text>;
   if (error) return <Text>Error</Text>;
 
-  return data.book.map(b => (
+  return data.book.map((b) => (
     <Card key={b.title}>
       <Text>{b.title}</Text>
     </Card>

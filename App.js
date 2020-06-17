@@ -1,17 +1,8 @@
 import React from 'react';
 import * as eva from '@eva-design/eva';
-import {
-  ApplicationProvider,
-  IconRegistry,
-  Layout,
-} from '@ui-kitten/components';
-import { EvaIconsPack } from '@ui-kitten/eva-icons';
-import {
-  ApolloProvider,
-  ApolloClient,
-  HttpLink,
-  InMemoryCache,
-} from '@apollo/client';
+import {ApplicationProvider, IconRegistry, Layout} from '@ui-kitten/components';
+import {EvaIconsPack} from '@ui-kitten/eva-icons';
+import {ApolloProvider, ApolloClient, HttpLink, InMemoryCache} from '@apollo/client';
 import Test from './components/Test';
 import Top from './components/Top';
 import Buttons from './components/Buttons';

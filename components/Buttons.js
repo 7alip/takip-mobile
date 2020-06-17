@@ -1,9 +1,9 @@
 import React from 'react';
-import { Button, Icon, Layout, Spinner } from '@ui-kitten/components';
+import {Button, Icon, Layout, Spinner} from '@ui-kitten/components';
 
-const StarIcon = props => <Icon {...props} name="star" />;
+const StarIcon = (props) => <Icon {...props} name="star" />;
 
-const LoadingIndicator = props => (
+const LoadingIndicator = () => (
   <Layout>
     <Spinner size="small" />
   </Layout>
