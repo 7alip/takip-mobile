@@ -17,6 +17,7 @@
     "@ui-kitten/eva-icons": "^5.0.0",
     "expo": "~38.0.8",
     "graphql": "^15.3.0",
+    "logkitty": "^0.7.1",
     "react": "~16.13.1",
     "react-dom": "~16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-38.0.2.tar.gz",
